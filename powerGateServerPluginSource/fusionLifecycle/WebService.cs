@@ -12,6 +12,9 @@ namespace fusionLifecycle
             AddMethod(new FusionLifecycleItems());
             AddMethod(new FusionLifecycleItemProperties());
             AddMethod(new FusionLifecycleItemRelations());
+            AddMethod(new FusionLifecycleItemAttachments());
+            AddMethod(new FusionLifecycleFileService());
+            
         }
     }
 }
