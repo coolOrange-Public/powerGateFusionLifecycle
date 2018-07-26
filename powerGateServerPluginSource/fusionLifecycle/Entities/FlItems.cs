@@ -65,7 +65,7 @@ namespace fusionLifecycle
                 {
                     pgItem.Relations.Add(new FusionLifecycleItemRelation() { Id=item.Id, WorkspaceId=item.Details.WorkspaceId });
                 }
-            if(attachments != null)
+            if(attachments.List != null)
             {
                 foreach (var file in attachments.List.Data)
                     pgItem.Attachments.Add(new FusionLifecycleItemAttachment() { Description=file.File.Description, DmsId=file.File.DmsId, FileId=file.File.FileId, FileName=file.File.FileName, FolderId=file.File.FolderId, Owner=file.File.CreatedDisplayName, Revision=file.File.FileVersion.ToString(), Status=file.File.FileStatus.Status, TimeStamp=file.File.TimeStamp, Uri=file.Uri, Version=file.File.VersionId, WorkspaceId=file.File.WorkspaceId });
